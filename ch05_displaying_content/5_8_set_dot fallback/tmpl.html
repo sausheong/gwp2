@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Go Web Programming</title>
+  </head>
+  <body>
+    <div>The dot is {{ . }}</div>
+    <div>
+    {{ with "" }}
+      Now the dot is set to {{ . }}
+    {{ else }}
+      The dot is still {{ . }}
+    {{ end }}
+    </div>
+    <div>The dot is {{ . }} again</div>
+  </body>
+</html>
