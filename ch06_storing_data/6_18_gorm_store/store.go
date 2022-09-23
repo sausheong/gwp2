@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 
-	_ "github.com/lib/pq"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -19,7 +18,7 @@ type Comment struct {
 	gorm.Model
 	Content string
 	Author  string
-	PostID  int
+	PostID  uint
 }
 
 var Db *gorm.DB
